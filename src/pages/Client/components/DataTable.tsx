@@ -106,6 +106,12 @@ const data: TableRow[] = [
 const DataTable: React.FC = () => {
   return (
     <div className="p-4 overflow-x-auto">
+      <div className=" p-5 rounded-2xl mb-5">
+        <div className="w-full justify-between items-center ">
+          <h3 className="font-bold text-title-lg text-white">Existing Client tier mapping</h3>
+          <p className="mt-3"> Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum</p>
+        </div>
+      </div>
       <table className="min-w-full bg-lightBlue">
         <thead>
           <tr className="w-full text-left bg-darkBlue text-white">

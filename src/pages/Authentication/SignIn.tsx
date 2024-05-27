@@ -41,7 +41,7 @@ const SignIn: React.FC = () => {
                 type="password"
                 placeholder="******************"
               />
-              <Link to={'/forget_password'} className="text-gray-400 cursor-pointer text-sm mt-2 text-right">Forgot Password?</Link>
+              <Link to={'/forget_password'} ><p className="text-gray-400 cursor-pointer text-sm mt-2 text-right">Forgot Password?</p></Link>
             </div>
             <div className="flex items-center justify-between mt-6 md:mt-12">
               <Link to={'/dashboard'}>

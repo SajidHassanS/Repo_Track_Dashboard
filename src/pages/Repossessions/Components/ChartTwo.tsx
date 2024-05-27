@@ -51,7 +51,14 @@ const ChartTwo = () => {
   };
 
   return (
-        <ReactApexChart options={options} series={series} type="pie" height={550}/>
+    <>
+    <div className="bg-[#090d28] p-5 rounded-2xl shadow-lg">
+       <div className="flex w-full justify-between items-center text-white">
+        <h3 className="font-bold text-title-lg">Stored Vehicle Pending</h3>
+      </div>
+        <ReactApexChart options={options} series={series} type="pie" height={450} width={450}/>
+        </div>
+        </>
   );
 };
 

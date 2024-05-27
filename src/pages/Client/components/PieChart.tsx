@@ -1,59 +1,64 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactApexChart from 'react-apexcharts';
 
-interface ApexChartProps {}
+const PieChart = () => {
+  const series = [44, 55, 13, 43, 22];
 
-const PieChart: React.FC<ApexChartProps> = () => {
-  const [series, setSeries] = useState<number[]>([44, 55, 13, 43, 22]);
-  const [options, setOptions] = useState<ApexCharts.ApexOptions>({
+  const options = {
     chart: {
-      width: 380,
       type: 'pie',
+      toolbar:{
+        show:false
+      }
     },
-    labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
-   responsive: [
-        {
-          breakpoint: 1200,
-          options: {
-            chart: {
-              height: 300,
-            },
+    responsive: [
+      {
+        breakpoint: 1200,
+        options: {
+          chart: {
+            height: 300,
           },
         },
-        {
-          breakpoint: 992,
-          options: {
-            chart: {
-              height: 250,
-            },
+      },
+      {
+        breakpoint: 992,
+        options: {
+          chart: {
+            height: 250,
           },
         },
-        {
-          breakpoint: 768,
-          options: {
-            chart: {
-              height: 300,
-            },
+      },
+      {
+        breakpoint: 768,
+        options: {
+          chart: {
+            height: 300,
           },
         },
-        {
-          breakpoint: 576,
-          options: {
-            chart: {
-              height: 250,
-            },
+      },
+      {
+        breakpoint: 576,
+        options: {
+          chart: {
+            height: 250,
           },
         },
-      ],
-  });
+      },
+    ],
+      legend: {
+        show: false
+      },
+  };
 
   return (
-    <div className="flex flex-col   p-4">
-      <div id="chart">
-        <ReactApexChart options={options} series={series} type="pie" width={480} height={450}/>
+    <>
+    <div className="bg-[#090d28] p-5 rounded-2xl shadow-lg">
+       <div className="flex w-full justify-between items-center text-white">
+        <h3 className="font-bold text-title-lg">Stored Vehicle Pending</h3>
       </div>
-      <div id="html-dist"></div>
-    </div>
+        <ReactApexChart options={options} series={series} type="pie" height={450} width={450}/>
+        </div>
+        </>
   );
 };
 

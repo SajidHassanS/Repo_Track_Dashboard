@@ -22,49 +22,10 @@ const StoredVehicle: React.FC = () => {
       },
       stroke: {
         curve: 'smooth',
-        width: 2
+        width: 10
       },
       grid: {
         show: false
-      },
-      responsive: [{
-        breakpoint: 480,
-        options: {
-          chart: {
-            width: 200
-          },
-          legend: {
-            position: 'bottom'
-          }
-        }
-      }],
-      xaxis: {
-        
-        // categories: ['10:00 pm - 12:00 am', '12:00 am - 2:00 am', '2:00 am - 4:00 am', '4:00 am - 6:00 am'],
-        labels: {
-            show:false,
-          style: {
-            colors: '#FFFFFF',
-            fontSize: '12px'
-          },
-        },
-        axisBorder: {
-          show: false
-        },
-        axisTicks: {
-          show: false
-        }
-      },
-      yaxis: {
-        min: 0,
-        max: 35,
-        tickAmount: 7, // Creates labels at 0, 5, 10, 15, 20, 25, 30, and 35
-        labels: {
-          style: {
-            colors: '#FFFFFF',
-            fontSize: '12px'
-          }
-        }
       },
       responsive: [
         {
@@ -100,13 +61,41 @@ const StoredVehicle: React.FC = () => {
           },
         },
       ],
+      xaxis: {
+        
+        // categories: ['10:00 pm - 12:00 am', '12:00 am - 2:00 am', '2:00 am - 4:00 am', '4:00 am - 6:00 am'],
+        labels: {
+            show:false,
+          style: {
+            colors: '#FFFFFF',
+            fontSize: '12px'
+          },
+        },
+        axisBorder: {
+          show: false
+        },
+        axisTicks: {
+          show: false
+        }
+      },
+      yaxis: {
+        min: 0,
+        max: 35,
+        tickAmount: 7, // Creates labels at 0, 5, 10, 15, 20, 25, 30, and 35
+        labels: {
+          style: {
+            colors: '#FFFFFF',
+            fontSize: '12px'
+          }
+        }
+      },
       colors: ['#FF6347']
     }
   });
 
   return (
-    <div className="bg-white dark:bg-[#090d28] p-5 col-span-1 rounded-2xl shadow-lg">
-      <div className="flex w-full justify-between items-center text-black dark:text-white">
+    <div className="bg-[#090d28] p-5 col-span-1 rounded-2xl shadow-lg">
+      <div className="flex w-full justify-between items-center text-white">
         <h3 className="font-bold text-title-lg">Stored Vehicle Pending</h3>
       </div>
       <ReactApexChart options={chartOptions.options} series={chartOptions.series} type="area" height={450} />
