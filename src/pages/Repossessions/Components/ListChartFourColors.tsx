@@ -45,10 +45,10 @@ const ListChartFourColors = () => {
         
     ]
   return (
-    <div className=" col-span-6 py-4 2xl:col-span-1 flex flex-row flex-wrap w-full 2xl:flex-col justify-center items-start gap-3">
+    <div className="  py-4 flex flex-row flex-wrap w-full 2xl:flex-col justify-center items-start gap-2">
         {
             branches.map((item,idx)=>(
-        <div key={idx} className={`rounded-xl text-center ${item.color} px-8 md:px-32 py-4 text-white`}>{item.text}</div>
+        <div key={idx} className={`rounded-xl text-center ${item.color} px-8 md:px-16 py-3 text-white`}>{item.text}</div>
 
             ))
         }
