@@ -82,7 +82,7 @@ const CardDataStats: React.FC<CardDataStatsProps> = ({
   });
 
   return (
-    <div className="rounded-2xl w-64 h-64 py-4 px-4 shadow-default bg-[#090d28] overflow-hidden m-4 flex flex-col justify-between">
+    <div className="rounded-2xl col-span-6 md:col-span-2 2xl:col-span-1 h-64 py-4 px-4 shadow-default bg-[#090d28] overflow-hidden m-4 flex flex-col justify-between">
       <div className="flex items-end justify-between">
         <div>
           <h4 className="text-title-sm font-light text-bodydark">{title1}</h4>
