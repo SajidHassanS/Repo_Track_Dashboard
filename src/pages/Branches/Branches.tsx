@@ -13,12 +13,7 @@ const Branches = () => {
         <ChartOne/>
         </div>
       </div>
-      <div className='bg-[#090d28] my-8 grid grid-cols-6 rounded-2xl p-1 xl:p-5'>
-        <ListChartFourColors/>
-        <div className=" col-span-6 2xl:col-span-5">
-        <ChartTwo/>
-        </div>
-      </div>
+     
   </DefaultLayout>
   )
 }

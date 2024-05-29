@@ -14,7 +14,7 @@ const radialOptions: ApexOptions = {
   plotOptions: {
     radialBar: {
       hollow: {
-        size: '40%', // Size of the inner circle
+        size: '30%', // Size of the inner circle
       },
       track: {
         background: 'transparent', // Set track background to transparent
@@ -45,7 +45,7 @@ const radialOptions: ApexOptions = {
       breakpoint: 1200,
       options: {
         chart: {
-          height: 300,
+          height: 250,
         },
       },
     },
@@ -53,7 +53,7 @@ const radialOptions: ApexOptions = {
       breakpoint: 992,
       options: {
         chart: {
-          height: 250,
+          height: 200,
         },
       },
     },
@@ -61,7 +61,7 @@ const radialOptions: ApexOptions = {
       breakpoint: 768,
       options: {
         chart: {
-          height: 300,
+          height: 250,
         },
       },
     },
@@ -69,7 +69,7 @@ const radialOptions: ApexOptions = {
       breakpoint: 576,
       options: {
         chart: {
-          height: 250,
+          height: 200,
         },
       },
     },
@@ -87,7 +87,7 @@ const ChartTwo: React.FC = () => {
   }, []);
 
   return (
-    <div className="col-span-12 h-full rounded-[25px] flex flex-col justify-between  p-7.5 shadow-default bg-[#090d28] min-[2000px]:col-span-4">
+    <div className="col-span-3 xl:col-span-1  h-full rounded-[25px] flex flex-col justify-between  p-7.5 shadow-default bg-[#090d28] ">
       <div className="mb-16 justify-between gap-4 sm:flex">
         <div>
           <h4 className="text-xl font-semibold  text-white">
@@ -98,11 +98,11 @@ const ChartTwo: React.FC = () => {
 
       <div className='mb-10'>
         <div id="chartTwo" className="-ml-5 -mb-9">
-          <ReactApexChart options={radialOptions} series={radialOptions.series} type="radialBar" height={450} />
+          <ReactApexChart options={radialOptions} series={radialOptions.series} type="radialBar" height={350} />
         </div>
       </div>
 
-      <div className="flex mx-auto max-w-[80%] justify-center gap-4 md:font-bold md:text-4xl items-center flex-wrap md:gap-8 mt-8">
+      <div className="flex  justify-center gap-4 md:font-bold md:text-2xl items-center flex-wrap md:gap-4 mt-4">
         <div className="flex items-center space-x-2">
           <span className="block w-4 h-4 rounded-full bg-orange-500"></span>
           <span>Day 1</span>

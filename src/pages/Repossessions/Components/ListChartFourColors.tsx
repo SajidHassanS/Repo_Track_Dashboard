@@ -23,11 +23,11 @@ const ListChartFourColors = () => {
             text:"Branch"
         },
         {
-            color:"bg-[#f7bfb5]",
+            color:"bg-[#f7bfb5] text-red-500",
             text:"Branch"
         },
         {
-            color:"bg-[#fce7e3]",
+            color:"bg-[#fce7e3] text-red-500",
             text:"Branch"
         },
         {
@@ -35,11 +35,11 @@ const ListChartFourColors = () => {
             text:"Branch"
         },
         {
-            color:"bg-[#6bffd3]",
+            color:"bg-[#6bffd3] text-red-500",
             text:"Branch"
         },
         {
-            color:"bg-[#d1fff1]",
+            color:"bg-[#d1fff1] text-red-500",
             text:"Branch"
         },
         
