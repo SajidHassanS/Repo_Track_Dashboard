@@ -10,7 +10,7 @@ const Header = (props: {
   setSidebarOpen: (arg0: boolean) => void;
 }) => {
   return (
-    <header className="sticky top-0 z-999 flex w-full  bg-[#181c3a] backdrop-filter backdrop-blur-sm">
+    <header className="sticky top-0 z-999 flex w-full bg-whiten  dark:bg-[#181c3a] backdrop-filter backdrop-blur-sm">
       <div className="flex flex-grow items-center justify-between px-4 py-4 shadow-2 md:px-6 2xl:px-11">
         <div className="flex items-center gap-2 sm:gap-4 lg:hidden">
           {/* <!-- Hamburger Toggle BTN --> */}
@@ -20,7 +20,7 @@ const Header = (props: {
               e.stopPropagation();
               props.setSidebarOpen(!props.sidebarOpen);
             }}
-            className="z-99999 block rounded-sm border  p-1.5 shadow-sm border-strokedark bg-[#090d28] lg:hidden"
+            className="z-99999 block rounded-sm border  p-1.5 shadow-sm border-strokedark bg-bodydark1 dark:bg-[#090d28] lg:hidden"
           >
             <span className="relative block h-5.5 w-5.5 cursor-pointer">
               <span className="du-block absolute right-0 h-full w-full">
@@ -62,7 +62,7 @@ const Header = (props: {
         </div>
 
         <div className="hidden w-1/4 lg:block">
-        <h3 className="ml-4 text-2xl font-bold  text-white">
+        <h3 className="ml-4 text-2xl font-bold  text-black dark:text-white">
         Hi,  Benjamin!
             </h3>
             <h3 className="ml-4 text-sm font-semiboldtext-body">
@@ -75,7 +75,7 @@ const Header = (props: {
             {/* Search field */}
             <div className="hidden sm:block">
           <form action="https://formbold.com/s/unique_form_id" method="POST">
-            <div className="relative py-3 rounded-full  bg-[#090d28]">
+            <div className="relative py-3 rounded-full bg-bodydark1 dark:bg-[#090d28]">
               <button className="absolute right-5 top-1/2 -translate-y-1/2">
                 <svg
                   className=" fill-bodydark hover:fill-primary"

@@ -55,8 +55,8 @@ const ChartFour = () => {
 
   return (
     <div className='relative'>
-      <div className="bg-[#090d28] p-5 rounded-2xl mb-5">
-        <div className="flex w-full justify-between items-center text-white">
+      <div className="dark:bg-[#090d28] bg-bodydark1 p-5 rounded-2xl mb-5">
+        <div className="flex w-full justify-between items-center text-black dark:text-white">
           <h3 className="font-bold text-title-lg">Branches</h3>
         </div>
       </div>

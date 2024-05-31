@@ -61,18 +61,18 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   return (
     <aside
       ref={sidebar}
-      className={`absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden  bg-[#090d28] duration-300 ease-linear lg:static lg:translate-x-0 ${
+      className={`absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-bodydark1  dark:bg-[#090d28] duration-300 ease-linear lg:static lg:translate-x-0 ${
         sidebarOpen ? 'translate-x-0' : '-translate-x-full'
       }`}
     >
       {/* <!-- SIDEBAR HEADER --> */}
-      <div className=' bg-[#181c3a]'>
+      <div className='dark:bg-[#181c3a] bg-whiten'>
       <div className={`flex items-center justify-between  ${
                     pathname.includes('/dashboard') && 'rounded-br-[25px]'
-                  }  bg-[#090d28] gap-2 px-6 py-4`}>
+                  }  bg-bodydark1  dark:bg-[#090d28] gap-2 px-6 py-4`}>
         <NavLink to="/">
           {/* <img src={Logo} alt="Logo" /> */}
-          <h3 className={`mb-4 ml-4 text-2xl font-bold text-white mt-10`}>
+          <h3 className={`mb-4 ml-4 text-2xl font-bold dark:text-white mt-10`}>
               Logo
             </h3>
         </NavLink>
@@ -82,7 +82,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
           onClick={() => setSidebarOpen(!sidebarOpen)}
           aria-controls="sidebar"
           aria-expanded={sidebarOpen}
-          className="block lg:hidden  bg-[#090d28]"
+          className="block lg:hidden  bg-bodydark1  dark:bg-[#090d28]"
         >
           <svg
             className="fill-current"
@@ -104,7 +104,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
       <div className="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear">
         {/* <!-- Sidebar Menu --> */}
-        <nav className=" bg-[#181c3a]">
+        <nav className=" dark:bg-[#181c3a] bg-whiten">
           {/* <!-- Menu Group --> */}
           <div>
             <ul className="flex flex-col">
@@ -112,9 +112,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <li>
                 <NavLink
                   to="/dashboard"
-                  className={`group relative flex items-center gap-2.5 rounded-sm py-4 px-8 font-medium  duration-300 ease-in-out  hover:bg-[#181c3a] ${
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-4 px-8 font-medium  duration-300 ease-in-out ${
                     pathname.includes('/dashboard') ?
-                    ' bg-[#181c3a]':' bg-[#090d28]'
+                    ' bg-whiten dark:bg-[#181c3a]':' bg-bodydark1  dark:bg-[#090d28]'
                   }
                   ${
                     pathname.includes('/finance') && 'rounded-br-[25px]'
@@ -142,8 +142,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <li>
                 <NavLink
                   to="/finance"
-                  className={`group relative flex items-center gap-2.5  py-4 px-8 font-medium duration-300 ease-in-out   hover:bg-[#181c3a] ${
-                    pathname.includes('finance') ?' bg-[#181c3a]':'bg-[#090d28]'
+                  className={`group relative flex items-center gap-2.5  py-4 px-8 font-medium duration-300 ease-in-out    ${
+                    pathname.includes('finance') ?' bg-whiten dark:bg-[#181c3a]':' bg-bodydark1  dark:bg-[#090d28]'
                   }
                   ${
                     pathname.includes('/dashboard') && 'rounded-tr-[25px]'
@@ -178,8 +178,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <li>
                 <NavLink
                   to="/clients"
-                  className={`group relative flex items-center gap-2.5 rounded-sm py-4 px-8 font-medium duration-300 ease-in-out   hover:bg-[#181c3a] ${
-                    pathname.includes('clients') ? ' bg-[#181c3a]':'bg-[#090d28]'
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-4 px-8 font-medium duration-300 ease-in-out    ${
+                    pathname.includes('clients') ? ' bg-whiten dark:bg-[#181c3a]':' bg-bodydark1  dark:bg-[#090d28]'
                   }
                   ${
                     pathname.includes('/finance') && 'rounded-tr-[25px]'
@@ -222,9 +222,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <li>
                 <NavLink
                   to="/reports"
-                  className={`group relative flex items-center gap-2.5 rounded-sm py-4 px-8 font-medium duration-300 ease-in-out   hover:bg-[#181c3a] ${
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-4 px-8 font-medium duration-300 ease-in-out    ${
                     pathname.includes('reports') ?
-                    ' bg-[#181c3a]':'bg-[#090d28]'
+                    ' bg-whiten dark:bg-[#181c3a]':' bg-bodydark1  dark:bg-[#090d28]'
                   }
                   ${
                     pathname.includes('/clients') && 'rounded-tr-[25px]'
@@ -242,9 +242,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   <li>
                 <NavLink
                   to="/branches"
-                  className={`group relative flex items-center gap-2.5 rounded-sm py-4 px-8 font-medium duration-300 ease-in-out   hover:bg-[#181c3a] ${
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-4 px-8 font-medium duration-300 ease-in-out    ${
                     pathname.includes('branches') ?
-                    ' bg-[#181c3a]':'bg-[#090d28]'
+                    ' bg-whiten dark:bg-[#181c3a]':' bg-bodydark1  dark:bg-[#090d28]'
                   }
                   ${
                     pathname.includes('/reports') && 'rounded-tr-[25px]'
@@ -262,9 +262,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   <li>
                 <NavLink
                   to="/repossessions"
-                  className={`group relative flex items-center gap-2.5 rounded-sm py-4 px-8 font-medium duration-300 ease-in-out   hover:bg-[#181c3a] ${
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-4 px-8 font-medium duration-300 ease-in-out    ${
                     pathname.includes('repossessions') ?
-                    ' bg-[#181c3a]':'bg-[#090d28]'
+                    ' bg-whiten dark:bg-[#181c3a]':' bg-bodydark1  dark:bg-[#090d28]'
                   }
                   ${
                     pathname.includes('/branches') && 'rounded-tr-[25px]'

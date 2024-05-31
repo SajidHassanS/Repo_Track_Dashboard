@@ -52,8 +52,8 @@ const PieChart = () => {
 
   return (
     <>
-    <div className="bg-[#090d28] p-5 rounded-2xl shadow-lg">
-       <div className="flex w-full justify-between items-center text-white">
+    <div className=" bg-transparent p-5 rounded-2xl">
+       <div className="flex w-full justify-between items-center text-black dark:text-white">
         <h3 className="font-bold text-title-lg">Stored Vehicle Pending</h3>
       </div>
         <ReactApexChart options={options} series={series} type="pie" height={450} width={450}/>

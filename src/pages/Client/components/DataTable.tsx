@@ -108,13 +108,13 @@ const DataTable: React.FC = () => {
     <div className="p-4 overflow-x-auto">
       <div className=" p-5 rounded-2xl mb-5">
         <div className="w-full justify-between items-center ">
-          <h3 className="font-bold text-title-lg text-white">Existing Client tier mapping</h3>
+          <h3 className="font-bold text-title-lg text-black dark:text-white">Existing Client tier mapping</h3>
           <p className="mt-3"> Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum</p>
         </div>
       </div>
-      <table className="min-w-full bg-lightBlue">
+      <table className="min-w-full dark:bg-[#090d28] bg-bodydark1">
         <thead>
-          <tr className="w-full text-left bg-darkBlue text-white">
+          <tr className="w-full text-left dark:bg-[#090d28] bg-bodydark1 text-black dark:text-white">
             <th className="p-2"><input type="checkbox" /></th>
             <th className="p-2">Tier ID</th>
             <th className="p-2">RDN</th>
@@ -131,7 +131,7 @@ const DataTable: React.FC = () => {
         </thead>
         <tbody>
           {data.map((row, index) => (
-            <tr key={index} className="text-white bg-myTable even:bg-myTable">
+            <tr key={index} className="text-black dark:text-white bg-myTable even:bg-myTable">
               <td className="p-2"><RxCross1 /></td>
               <td className="p-2">{row.tierId}</td>
               <td className="p-2">{row.rdn}</td>

@@ -13,30 +13,30 @@ const Repossessions = () => {
 
   return (
     <DefaultLayout>
-      <div className='bg-[#090d28] rounded-2xl p-2 xl:p-5'>
+      <div className='rounded-2xl p-2 xl:p-5'>
         <ChartOne/>
       </div>
       <div className='grid grid-cols-2 my-8 gap-4 md:gap-6 2xl:gap-7.5'>
-        <div className=' col-span-2 xl:col-span-1 bg-[#090d28] p-1 xl:p-5 rounded-2xl'>
+        <div className=' col-span-2 xl:col-span-1 h-full  p-1 xl:p-5 rounded-2xl'>
           <ChartTwo/>
         </div>
-        <div className=' col-span-2 xl:col-span-1 bg-[#090d28] p-1 xl:p-5 rounded-2xl'>
+        <div className=' col-span-2 xl:col-span-1  p-1 xl:p-5 rounded-2xl'>
           <ChartThree/>
         </div>
       </div>
-      <div className='bg-[#090d28] grid grid-cols-6 rounded-2xl p-1 xl:p-5'>
+      <div className=' dark:bg-[#090d28] bg-bodydark1 grid grid-cols-6 rounded-2xl p-1 xl:p-5'>
         <ListChartFourColors/>
         <div className=" col-span-6 2xl:col-span-5">
         <ChartFour/>
         </div>
       </div>
-      <div className='bg-[#090d28] my-8 rounded-2xl p-1 xl:p-5'>
+      <div className=' my-8 rounded-2xl p-1 xl:p-5'>
         <ChartFive/>
       </div>
-      <div className='bg-[#090d28] my-8 rounded-2xl p-1 xl:p-5'>
+      <div className=' my-8 rounded-2xl p-1 xl:p-5'>
         <ChartSix/>
       </div>
-      <div className='bg-[#090d28] my-8 rounded-2xl p-1 xl:p-5'>
+      <div className=' my-8 rounded-2xl p-1 xl:p-5'>
         <ChartSeven/>
       </div>
     </DefaultLayout>

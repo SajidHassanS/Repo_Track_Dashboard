@@ -64,34 +64,34 @@ const TierForm: React.FC = () => {
     <form onSubmit={handleSubmit} className="p-8 ">
       <div className="grid md:grid-cols-3 gap-6">
         <div>
-          <label className="block text-white mb-3">Client</label>
+          <label className="block text-black dark:text-white mb-3">Client</label>
           <input
             type="text"
             name="client"
             value={formData.client}
             onChange={handleChange}
-            className="w-full p-2 border border-myBorder rounded bg-darkBlue text-white focus:border-red-500"
+            className="w-full p-2 border border-black dark:border-myBorder rounded dark:bg-[#090d28] bg-bodydark1 text-black dark:text-white focus:border-red-500"
             placeholder="Client"
           />
         </div>
         <div>
-          <label className="block text-white mb-3">Tier Name</label>
+          <label className="block text-black dark:text-white mb-3">Tier Name</label>
           <input
             type="text"
             name="tierName"
             value={formData.tierName}
             onChange={handleChange}
-            className="w-full p-2 border border-myBorder rounded bg-darkBlue text-white focus:border-red-500"
+            className="w-full p-2 border border-black dark:border-myBorder rounded dark:bg-[#090d28] bg-bodydark1 text-black dark:text-white focus:border-red-500"
             placeholder="Tier Name"
           />
         </div>
         <div>
-          <label className="block text-white mb-3">RDN Instance</label>
+          <label className="block text-black dark:text-white mb-3">RDN Instance</label>
           <select
             name="rdnInstance"
             value={formData.rdnInstance}
             onChange={handleChange}
-            className="w-full p-2 border border-myBorder rounded bg-darkBlue text-white focus:border-red-500"
+            className="w-full p-2 border border-black dark:border-myBorder rounded dark:bg-[#090d28] bg-bodydark1 text-black dark:text-white focus:border-red-500"
           >
             <option value="" disabled>
               Select
@@ -101,12 +101,12 @@ const TierForm: React.FC = () => {
           </select>
         </div>
         <div>
-          <label className="block text-white mb-3">Classification</label>
+          <label className="block text-black dark:text-white mb-3">Classification</label>
           <select
             name="classification"
             value={formData.classification}
             onChange={handleChange}
-            className="w-full p-2 border border-myBorder rounded bg-darkBlue text-white focus:border-red-500"
+            className="w-full p-2 border border-black dark:border-myBorder rounded dark:bg-[#090d28] bg-bodydark1 text-black dark:text-white focus:border-red-500"
           >
             <option value="" disabled>
               Select
@@ -116,12 +116,12 @@ const TierForm: React.FC = () => {
           </select>
         </div>
         <div>
-          <label className="block text-white mb-3">Job Type</label>
+          <label className="block text-black dark:text-white mb-3">Job Type</label>
           <select
             name="jobType"
             value={formData.jobType}
             onChange={handleChange}
-            className="w-full p-2 border border-myBorder rounded bg-darkBlue text-white focus:border-red-500"
+            className="w-full p-2 border border-black dark:border-myBorder rounded dark:bg-[#090d28] bg-bodydark1 text-black dark:text-white focus:border-red-500"
           >
             <option value="" disabled>
               Select
@@ -131,35 +131,35 @@ const TierForm: React.FC = () => {
           </select>
         </div>
         <div>
-          <label className="block text-white mb-3">Placement</label>
+          <label className="block text-black dark:text-white mb-3">Placement</label>
           <input
             type="text"
             name="placement"
             value={formData.placement}
             onChange={handleChange}
-            className="w-full p-2 border border-myBorder rounded bg-darkBlue text-white focus:border-red-500"
+            className="w-full p-2 border border-black dark:border-myBorder rounded dark:bg-[#090d28] bg-bodydark1 text-black dark:text-white focus:border-red-500"
             placeholder="Placement"
           />
         </div>
         <div>
-          <label className="block text-white mb-3">Billable Amount</label>
+          <label className="block text-black dark:text-white mb-3">Billable Amount</label>
           <input
             type="text"
             name="billableAmount"
             value={formData.billableAmount}
             onChange={handleChange}
-            className="w-full p-2 border border-myBorder rounded bg-darkBlue text-white focus:border-red-500"
+            className="w-full p-2 border border-black dark:border-myBorder rounded dark:bg-[#090d28] bg-bodydark1 text-black dark:text-white focus:border-red-500"
             placeholder="Billable Amount"
           />
         </div>
         <div>
-          <label className="block text-white mb-3">Tier Needs</label>
+          <label className="block text-black dark:text-white mb-3">Tier Needs</label>
           <input
             type="text"
             name="tierNeeds"
             value={formData.tierNeeds}
             onChange={handleChange}
-            className="w-full p-2 border border-myBorder rounded bg-darkBlue text-white focus:border-red-500"
+            className="w-full p-2 border border-black dark:border-myBorder rounded dark:bg-[#090d28] bg-bodydark1 text-black dark:text-white focus:border-red-500"
             placeholder="Tier Needs"
           />
         </div>
@@ -167,48 +167,48 @@ const TierForm: React.FC = () => {
 
       <div className="grid md:grid-cols-3 mt-16 gap-6">
         <div>
-          <label className="block text-white mb-3">Smart Assign</label>
+          <label className="block text-black dark:text-white mb-3">Smart Assign</label>
           <select
             name="smartAssign"
             value={formData.smartAssign}
             onChange={handleChange}
-            className="w-full p-2 border border-myBorder rounded bg-darkBlue text-white focus:border-red-500"
+            className="w-full p-2 border border-black dark:border-myBorder rounded dark:bg-[#090d28] bg-bodydark1 text-black dark:text-white focus:border-red-500"
           >
             <option value="Yes">Yes</option>
             <option value="No">No</option>
           </select>
         </div>
         <div>
-          <label className="block text-white mb-3">Rejection Waterfall</label>
+          <label className="block text-black dark:text-white mb-3">Rejection Waterfall</label>
           <select
             name="rejectionWaterfall"
             value={formData.rejectionWaterfall}
             onChange={handleChange}
-            className="w-full p-2 border border-myBorder rounded bg-darkBlue text-white focus:border-red-500"
+            className="w-full p-2 border border-black dark:border-myBorder rounded dark:bg-[#090d28] bg-bodydark1 text-black dark:text-white focus:border-red-500"
           >
             <option value="Yes">Yes</option>
             <option value="No">No</option>
           </select>
         </div>
         <div>
-          <label className="block text-white mb-3">Waterfall Days</label>
+          <label className="block text-black dark:text-white mb-3">Waterfall Days</label>
           <input
             type="text"
             name="waterfallDays"
             value={formData.waterfallDays}
             onChange={handleChange}
-            className="w-full p-2 border border-myBorder rounded bg-darkBlue text-white focus:border-red-500"
+            className="w-full p-2 border border-black dark:border-myBorder rounded dark:bg-[#090d28] bg-bodydark1 text-black dark:text-white focus:border-red-500"
             placeholder="Waterfall Days"
           />
         </div>
         <div>
-          <label className="block text-white mb-3">Waterfall Days</label>
+          <label className="block text-black dark:text-white mb-3">Waterfall Days</label>
           <input
             type="text"
             name="waterfallDays"
             value={formData.waterfallDays}
             onChange={handleChange}
-            className="w-full p-2 border border-myBorder rounded bg-darkBlue text-white focus:border-red-500"
+            className="w-full p-2 border border-black dark:border-myBorder rounded dark:bg-[#090d28] bg-bodydark1 text-black dark:text-white focus:border-red-500"
             placeholder="Waterfall Days"
           />
         </div>
@@ -217,14 +217,14 @@ const TierForm: React.FC = () => {
       <div className="flex justify-end mt-6">
         <button
           type="submit"
-          className="px-8 py-2 rounded-full bg-red-500 text-white"
+          className="px-8 py-2 rounded-full bg-red-500 dark:text-black text-white"
         >
           Save Tier
         </button>
         <button
           type="button"
           onClick={handleClear}
-          className="px-8 py-2 rounded-full border border-green-500 bg-transparent text-white ml-4"
+          className="px-8 py-2 rounded-full border border-green-500 bg-transparent text-black dark:text-white ml-4"
         >
           Clear
         </button>

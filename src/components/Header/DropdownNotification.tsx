@@ -42,7 +42,7 @@ const DropdownNotification = () => {
           setDropdownOpen(!dropdownOpen);
         }}
         to="#"
-        className="relative flex h-8.5 w-8.5 items-center justify-center rounded-full border-[0.5px]  hover:text-primary border-strokedark bg-[#090d28] text-white"
+        className="relative flex h-8.5 w-8.5 items-center justify-center rounded-full dark:border-[0.5px]  hover:text-primary dark:border-strokedark bg-bodydark1 dark:bg-[#090d28] darktext-black:dark:text-white"
       >
         <span
           className={`absolute -top-0.5 right-0 z-1 h-2 w-2 rounded-full bg-meta-1 ${
@@ -71,22 +71,22 @@ const DropdownNotification = () => {
         ref={dropdown}
         onFocus={() => setDropdownOpen(true)}
         onBlur={() => setDropdownOpen(false)}
-        className={`absolute -right-27 mt-2.5 flex h-90 w-75 flex-col rounded-sm border  shadow-default border-strokedark bg-[#090d28] sm:right-0 sm:w-80 ${
+        className={`absolute -right-27 mt-2.5 flex h-90 w-75 flex-col rounded-sm dark:border  shadow-default dark:border-strokedark bg-bodydark1 dark:bg-[#090d28] sm:right-0 sm:w-80 ${
           dropdownOpen === true ? 'block' : 'hidden'
         }`}
       >
         <div className="px-4.5 py-3">
-          <h5 className="text-sm font-medium text-bodydark2">Notification</h5>
+          <h5 className="text-sm font-medium text-black dark:text-bodydark2">Notification</h5>
         </div>
 
         <ul className="flex h-auto flex-col overflow-y-auto">
           <li>
             <Link
-              className="flex flex-col gap-2.5 border-t px-4.5 py-3  border-strokedark hover:bg-meta-4"
+              className="flex flex-col gap-2.5 border-t px-4.5 py-3  border-strokedark hover:bg-whiten dark:hover:bg-whiten dark:hover:bg-meta-4"
               to="#"
             >
               <p className="text-sm">
-                <span className=" text-white">
+                <span className="text-black dark:text-white">
                   Edit your information in a swipe
                 </span>{' '}
                 Sint occaecat cupidatat non proident, sunt in culpa qui officia
@@ -98,11 +98,11 @@ const DropdownNotification = () => {
           </li>
           <li>
             <Link
-              className="flex flex-col gap-2.5 border-t px-4.5 py-3  border-strokedark hover:bg-meta-4"
+              className="flex flex-col gap-2.5 border-t px-4.5 py-3  border-strokedark hover:bg-whiten dark:hover:bg-meta-4"
               to="#"
             >
               <p className="text-sm">
-                <span className=" text-white">
+                <span className="text-black dark:text-white">
                   It is a long established fact
                 </span>{' '}
                 that a reader will be distracted by the readable.
@@ -113,11 +113,11 @@ const DropdownNotification = () => {
           </li>
           <li>
             <Link
-              className="flex flex-col gap-2.5 border-t px-4.5 py-3  border-strokedark hover:bg-meta-4"
+              className="flex flex-col gap-2.5 border-t px-4.5 py-3  border-strokedark hover:bg-whiten dark:hover:bg-meta-4"
               to="#"
             >
               <p className="text-sm">
-                <span className=" text-white">
+                <span className="text-black dark:text-white">
                   There are many variations
                 </span>{' '}
                 of passages of Lorem Ipsum available, but the majority have
@@ -129,11 +129,11 @@ const DropdownNotification = () => {
           </li>
           <li>
             <Link
-              className="flex flex-col gap-2.5 border-t px-4.5 py-3  border-strokedark hover:bg-meta-4"
+              className="flex flex-col gap-2.5 border-t px-4.5 py-3  border-strokedark hover:bg-whiten dark:hover:bg-meta-4"
               to="#"
             >
               <p className="text-sm">
-                <span className=" text-white">
+                <span className="text-black dark:text-white">
                   There are many variations
                 </span>{' '}
                 of passages of Lorem Ipsum available, but the majority have

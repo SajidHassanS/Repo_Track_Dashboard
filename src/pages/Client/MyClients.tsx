@@ -12,7 +12,7 @@ const MyClients = () => {
      <DefaultLayout>
     <div className=''>
 
-    <div className='bg-lightBlue'>
+    <div className='dark:bg-[#090d28] bg-bodydark1'>
 
 <TierForm/> 
 
@@ -27,11 +27,11 @@ const MyClients = () => {
 
     </div>
     <div className='flex flex-col md:flex-row mt-16  gap-10 '>
-   <div className='bg-darkBlue md:w-1/2 rounded-[25px] '>
+   <div className='dark:bg-[#090d28] bg-bodydark1 md:w-1/2 rounded-[25px] '>
 
    <PieChart />
    </div>
-   <div className='bg-darkBlue md:w-1/2 rounded-[25px] '>
+   <div className='dark:bg-[#090d28] bg-bodydark1 md:w-1/2 rounded-[25px] '>
    <StoredVehicle/>
    </div>
 

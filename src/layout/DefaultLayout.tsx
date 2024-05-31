@@ -6,7 +6,7 @@ const DefaultLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className="bg-[#181c3a] text-bodydark">
+    <div className="dark:bg-[#181c3a] bg-whiten dark:text-bodydark">
       {/* <!-- ===== Page Wrapper Start ===== --> */}
       <div className="flex h-screen overflow-hidden">
         {/* <!-- ===== Sidebar Start ===== --> */}

@@ -186,8 +186,8 @@ const ChartOne = () => {
 
     return (
       <>
-      <div className="bg-[#090d28] p-5 rounded-2xl shadow-lg">
-       <div className="flex w-full justify-between items-center text-white">
+      <div className="dark:bg-[#090d28] bg-bodydark1 p-5 rounded-2xl shadow-lg">
+       <div className="flex w-full justify-between items-center text-black dark:text-white">
         <h3 className="font-bold text-title-lg">Total Repossessions</h3>
         <h4 className="time-period-btn">Week over week Graph</h4>
       </div>

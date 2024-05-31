@@ -82,10 +82,10 @@ const CardDataStats: React.FC<CardDataStatsProps> = ({
   });
 
   return (
-    <div className="rounded-2xl col-span-6 md:col-span-2 2xl:col-span-1 h-64 py-4 px-4 shadow-default bg-[#090d28] overflow-hidden m-4 flex flex-col justify-between">
+    <div className="rounded-2xl col-span-6 md:col-span-2 2xl:col-span-1 h-64 py-4 px-4 shadow-default bg-bodydark1 dark:bg-[#090d28] overflow-hidden m-4 flex flex-col justify-between">
       <div className="flex items-end justify-between">
         <div>
-          <h4 className="text-title-sm font-light text-bodydark">{title1}</h4>
+          <h4 className="text-title-sm font-light text-black dark:text-bodydark">{title1}</h4>
         </div>
         <span className={`flex items-center gap-1 text-sm font-medium ${levelUp ? 'text-meta-3' : ''} ${levelDown ? 'text-meta-5' : ''}`}>
           {rate1}
@@ -93,11 +93,11 @@ const CardDataStats: React.FC<CardDataStatsProps> = ({
       </div>
       <div className="relative">
         <ReactApexChart options={chartOptions.options} series={chartOptions.series} type="area" height={100} />
-        <h3 className="text-title-md font-bold absolute top-10 left-0 text-white">{graphValue}</h3>
+        <h3 className="text-title-md font-bold absolute top-10 left-0 text-black dark:text-white">{graphValue}</h3>
       </div>
       <div className="flex items-end justify-between">
         <div>
-          <h4 className="text-sm font-light text-bodydark">{title2}</h4>
+          <h4 className="text-sm font-light text-black dark:text-bodydark">{title2}</h4>
         </div>
         <span className={`flex items-center gap-1 text-sm font-medium ${levelUp ? 'text-meta-3' : ''} ${levelDown ? 'text-meta-5' : ''}`}>
           {rate2}
@@ -105,7 +105,7 @@ const CardDataStats: React.FC<CardDataStatsProps> = ({
       </div>
       <div className="flex items-end justify-between">
         <div>
-          <h4 className="text-sm font-light text-bodydark">{title3}</h4>
+          <h4 className="text-sm font-light text-black dark:text-black dark:text-bodydark">{title3}</h4>
         </div>
         <span className={`flex items-center gap-1 text-sm font-medium ${levelUp ? 'text-meta-3' : ''} ${levelDown ? 'text-meta-5' : ''}`}>
           {rate3}

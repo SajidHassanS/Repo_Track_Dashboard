@@ -87,10 +87,10 @@ const ChartTwo: React.FC = () => {
   }, []);
 
   return (
-    <div className="col-span-3 xl:col-span-1  h-full rounded-[25px] flex flex-col justify-between  p-7.5 shadow-default bg-[#090d28] ">
+    <div className="col-span-3 xl:col-span-1  h-full rounded-[25px] flex flex-col justify-between  p-7.5 shadow-default bg-bodydark1 dark:bg-[#090d28] ">
       <div className="mb-16 justify-between gap-4 sm:flex">
         <div>
-          <h4 className="text-xl font-semibold  text-white">
+          <h4 className="text-xl font-semibold  text-black dark:text-white">
             Total Report
           </h4>
         </div>
