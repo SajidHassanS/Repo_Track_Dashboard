@@ -3,10 +3,16 @@ import ReactApexChart from 'react-apexcharts';
 
 const ChartThree: React.FC = () => {
   const [chartOptions, setChartOptions] = React.useState({
-    series: [{
-      name: "Recovery Time",
-      data: [25, 30, 15, 10, 20, 18, 22, 19]
-    }],
+    series: [
+      {
+        name: "Recovery Time",
+        data: [250, 300, 150, 500, 200, 180, 220, 190]
+      },
+      {
+        name: "Response Time",
+        data: [230, 500, 180, 450, 170, 580, 250, 200]
+      }
+    ],
     options: {
       chart: {
         height: 350,
@@ -23,19 +29,14 @@ const ChartThree: React.FC = () => {
       },
       stroke: {
         curve: 'smooth',
-        width: 6
+        width: 3
       },
       grid: {
         show: false
       },
       xaxis: {
-        
-        categories: ['10:00 pm - 12:00 am', '12:00 am - 2:00 am', '2:00 am - 4:00 am', '4:00 am - 6:00 am'],
         labels: {
-          style: {
-            colors: '#FFFFFF',
-            fontSize: '12px'
-          },
+          show: false
         },
         axisBorder: {
           show: false
@@ -45,9 +46,9 @@ const ChartThree: React.FC = () => {
         }
       },
       yaxis: {
-        min: 0,
-        max: 35,
-        tickAmount: 7, // Creates labels at 0, 5, 10, 15, 20, 25, 30, and 35
+        min: 100,
+        max: 600,
+        tickAmount: 6, // Creates labels at 100, 200, 300, 400, 500, 600
         labels: {
           style: {
             colors: '#FFFFFF',
@@ -89,7 +90,7 @@ const ChartThree: React.FC = () => {
           },
         },
       ],
-      colors: ['#FF6347']
+      colors: ['#FF6347', '#1E90FF']
     }
   });
 

@@ -62,7 +62,7 @@ const TierForm: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit} className="p-8 ">
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div>
           <label className="block text-black dark:text-white mb-3">Client</label>
           <input
@@ -152,15 +152,15 @@ const TierForm: React.FC = () => {
             placeholder="Billable Amount"
           />
         </div>
-        <div>
-          <label className="block text-black dark:text-white mb-3">Tier Needs</label>
+        <div className="md:col-span-3">
+          <label className="block text-black dark:text-white mb-3">Tier Notes</label>
           <input
             type="text"
             name="tierNeeds"
             value={formData.tierNeeds}
             onChange={handleChange}
             className="w-full p-2 border border-black dark:border-myBorder rounded dark:bg-[#090d28] bg-bodydark1 text-black dark:text-white focus:border-red-500"
-            placeholder="Tier Needs"
+            placeholder="Tier Notes"
           />
         </div>
       </div>
@@ -179,7 +179,7 @@ const TierForm: React.FC = () => {
           </select>
         </div>
         <div>
-          <label className="block text-black dark:text-white mb-3">Rejection Waterfall</label>
+        <label className="block text-black dark:text-white mb-3">Rejection Waterfall</label>
           <select
             name="rejectionWaterfall"
             value={formData.rejectionWaterfall}
@@ -201,17 +201,7 @@ const TierForm: React.FC = () => {
             placeholder="Waterfall Days"
           />
         </div>
-        <div>
-          <label className="block text-black dark:text-white mb-3">Waterfall Days</label>
-          <input
-            type="text"
-            name="waterfallDays"
-            value={formData.waterfallDays}
-            onChange={handleChange}
-            className="w-full p-2 border border-black dark:border-myBorder rounded dark:bg-[#090d28] bg-bodydark1 text-black dark:text-white focus:border-red-500"
-            placeholder="Waterfall Days"
-          />
-        </div>
+        {/* Additional "Waterfall Days" input field removed */}
       </div>
 
       <div className="flex justify-end mt-6">
@@ -234,3 +224,4 @@ const TierForm: React.FC = () => {
 };
 
 export default TierForm;
+
