@@ -14,6 +14,7 @@ import ForgotPassword from './pages/Authentication/ForgotPassword';
 import ResetPassword from './pages/Authentication/ResetPassword';
 import EmailInstructions from './pages/Authentication/EmailInstructions';
 import PasswordChanged from './pages/Authentication/PasswordChanged';
+import Details from './pages/Details/Details';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -139,6 +140,15 @@ function App() {
             <>
               <PageTitle title="Branches" />
               <Branches />
+            </>
+          }
+        />
+        <Route
+          path="/details"
+          element={
+            <>
+              <PageTitle title="Details" />
+              <Details/>
             </>
           }
         />

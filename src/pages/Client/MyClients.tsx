@@ -21,7 +21,7 @@ const MyClients = () => {
 <DataTable/>
 </div>
 <div>
-  <TableRowww/>
+  {/* <TableRowww/> */}
 </div>
 
 

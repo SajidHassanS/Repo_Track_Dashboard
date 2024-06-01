@@ -5,7 +5,7 @@ import Logo from '../../images/logo/logo.svg';
 import { FiFileMinus } from "react-icons/fi";
 import { FaBuildingCircleArrowRight } from "react-icons/fa6";
 import { TbReportAnalytics } from "react-icons/tb";
-
+import {TbListDetails} from "react-icons/tb";
 interface SidebarProps {
   sidebarOpen: boolean;
   setSidebarOpen: (arg: boolean) => void;
@@ -273,9 +273,25 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                 
                  <TbReportAnalytics size={25}/>
                 
-                  Repossesions
+                  Repossessions
                 </NavLink>
               </li>
+              <li>
+  <NavLink
+    to="/details"
+    className={`group relative flex items-center gap-2.5 rounded-sm py-4 px-8 font-medium duration-300 ease-in-out ${
+      pathname.includes('details') ?
+      'bg-whiten dark:bg-[#181c3a]' : 'bg-bodydark1 dark:bg-[#090d28]'
+    }
+    ${
+      pathname.includes('/repossessions') && 'rounded-tr-[25px]'
+    }`}
+  >
+    <TbListDetails size={25}/>
+    Details
+  </NavLink>
+</li>
+
               {/* <!-- Menu Item Repossesions --> */}
             </ul>
           </div>
