@@ -69,9 +69,7 @@ const ChartOne = () => {
 
   return (
     <div className="relative">
-      <div className="dark:bg-[#090d28] bg-bodydark1 p-5 mx-16 rounded-2xl mb-5">
-       
-      </div>
+      <div className="dark:bg-[#090d28] bg-bodydark1 p-5 mx-16 rounded-2xl mb-5"></div>
       <ReactApexChart options={options} series={series} type="donut" height={550} />
       <div className="absolute inset-0 items-center sm:gap-20 gap-28 xl:gap-40 justify-center flex flex-col">
         <div className="w-full flex justify-center sm:gap-[220px] gap-[140px] lg:gap-[350px] xl:gap-[500px] 2xl:gap-[450px] text-center items-center text-xs sm:text-xl xl:text-3xl">
@@ -94,6 +92,10 @@ const ChartOne = () => {
             <div className="border-2 w-2/3 lg:-rotate-[15deg] h-3 xl:h-6 mr-10 lg:mr-20 border-l-0 border-t-0"></div>
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-5 right-5 flex space-x-4 mt-10">
+        <button className="dark:bg-[#090d28] bg-bodydark1 text-gray-600 px-4 py-2 rounded">Pie Chart</button>
+        <button className="dark:bg-[#091d28] bg-bodydark1 text-gray-600 px-4 py-2 rounded">Table</button>
       </div>
     </div>
   );

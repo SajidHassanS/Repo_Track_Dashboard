@@ -8,11 +8,14 @@ import ListChartFourColors from './Components/ListChartFourColors';
 import ChartFive from './Components/ChartFive';
 import ChartSix from './Components/ChartSix';
 import ChartSeven from './Components/ChartSeven';
-
+import Filter from './Components/Filter'
 const Repossessions = () => {
 
   return (
     <DefaultLayout>
+      <div className='rounded-2xl p-2 xl:p-5'>
+        <Filter/>
+      </div>
       <div className='rounded-2xl p-2 xl:p-5'>
         <ChartOne/>
       </div>
