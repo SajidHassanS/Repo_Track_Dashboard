@@ -24,11 +24,11 @@ const MyClients = () => {
         </div>
 
         <div className='flex flex-col md:flex-row mt-16 gap-10'>
-          <div className='transition-transform transform hover:scale-110 dark:bg-[#090d28] bg-bodydark1 md:w-1/2 rounded-[25px]'>
+          <div className='transition-transform transform hover:scale-105 dark:bg-[#090d28] bg-bodydark1 md:w-1/2 rounded-[25px]'>
             <PieChart />
           </div>
           
-          <div className='transition-transform transform hover:scale-110 dark:bg-[#090d28] bg-bodydark1 md:w-1/2 rounded-[25px]'>
+          <div className='transition-transform transform hover:scale-105 dark:bg-[#090d28] bg-bodydark1 md:w-1/2 rounded-[25px]'>
             <StoredVehicle />
           </div>
         </div>
