@@ -121,7 +121,7 @@ const ChartOne: React.FC = () => {
   });
 
   return (
-    <div className="col-span-3 xl:col-span-2 rounded-2xl dark:border  px-5 pt-7.5 pb-5 shadow-default border-strokedark bg-bodydark1 dark:bg-[#eb5431] sm:px-7.5 " >
+    <div className="col-span-3 xl:col-span-2 rounded-2xl dark:border  px-5 pt-7.5 pb-5 shadow-default border-strokedark bg-bodydark1 dark:bg-[#eb5431] sm:px-7.5 transition-transform transform hover:scale-105  " >
       <div className="flex w-full justify-between text-black  dark:text-white">
         <h3>Total Revenue</h3>
         <h4 className="time-period-btn">last 30 days</h4>

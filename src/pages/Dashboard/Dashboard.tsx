@@ -12,7 +12,7 @@ const Dashboard: React.FC = () => {
     <DefaultLayout>
       <div className='grid grid-cols-12 gap-4 md:gap-6 2xl:gap-7.5'>
         <div className='flex flex-col gap-4 md:gap-6 2xl:gap-7.5 col-span-12 min-[2000px]:col-span-12'>
-          <div className="grid grid-cols-4 gap-4 md:gap-6 2xl:gap-7.5">
+        <div className="grid gap-4 md:gap-6 2xl:gap-7.5 sm:grid-cols-4">
             <div className="transition-transform transform hover:scale-110">
               <CardDataStats 
                 title1="Year to Date" 
@@ -73,7 +73,7 @@ const Dashboard: React.FC = () => {
         </div>
       </div>
 
-      <div className='grid my-8 grid-cols-3 gap-4 md:gap-6 2xl:gap-7.5 transition-transform transform hover:scale-105'>
+      <div className='grid my-8 grid-cols-3 gap-4 md:gap-6 2xl:gap-7.5 '>
       
           <ChartOne />
        
@@ -82,7 +82,7 @@ const Dashboard: React.FC = () => {
        
       </div>
 
-      <div className='grid my-8 grid-cols-3 gap-4 md:gap-6 2xl:gap-7.5 transition-transform transform hover:scale-105'>
+      <div className='grid my-8 grid-cols-3 gap-4 md:gap-6 2xl:gap-7.5'>
     
           <ChartThree />
         
@@ -90,7 +90,7 @@ const Dashboard: React.FC = () => {
         
       </div>
 
-      <div className="transition-transform transform hover:scale-105 my-8">
+      <div className=" transition-transform transform hover:scale-105 my-8">
         <ChartFive />
       </div>
     </DefaultLayout>
