@@ -4,7 +4,7 @@ import ReactApexChart from 'react-apexcharts';
 const ChartSix = () => {
   const options = {
     series: [
-      { data: [11, 17, 15, 15, 21, 14, 21, 14, 4, 2, 13, 2, 12, 11, 10] },
+      { data: [11, 17, 15, 15, 21, 14, 21, 14, 4, 2, 13] },
     ],
     options: {
       chart: {
@@ -74,10 +74,6 @@ const ChartSix = () => {
           '01/09/2011 GMT',
           '01/10/2011 GMT',
           '01/11/2011 GMT',
-          '01/12/2011 GMT',
-          '01/13/2011 GMT',
-          '01/14/2011 GMT',
-          '01/15/2011 GMT',
         ],
         labels: {
           trim: true, // Trim x-axis labels

@@ -63,7 +63,7 @@ const Header = (props: {
 
         <div className="hidden w-1/4 lg:block">
         <h3 className="ml-4 text-2xl font-bold  text-black dark:text-white">
-        Hi,  Benjamin!
+        Hi,  Thomas!
             </h3>
             <h3 className="ml-4 text-sm font-semiboldtext-body">
             Congratulations . You got a great response today . 

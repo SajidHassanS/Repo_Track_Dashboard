@@ -15,6 +15,7 @@ import ResetPassword from './pages/Authentication/ResetPassword';
 import EmailInstructions from './pages/Authentication/EmailInstructions';
 import PasswordChanged from './pages/Authentication/PasswordChanged';
 import Details from './pages/Details/Details';
+import Reports from './pages/Reports/Reports'
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -121,7 +122,7 @@ function App() {
           element={
             <>
               <PageTitle title="Reports" />
-              <Repossessions/>
+              <Reports/>
             </>
           }
         />

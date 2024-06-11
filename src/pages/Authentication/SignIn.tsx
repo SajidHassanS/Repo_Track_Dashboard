@@ -1,61 +1,74 @@
 import React from 'react';
-import loginbtn from '../../../public/assets/loginbtn.png';
-import circle from '../../../public/assets/ovallaptop.png';
+import backimg from './images/img.png';
 import { Link } from 'react-router-dom';
-
 const SignIn: React.FC = () => {
   return (
-    <div className="h-screen grid lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
-      {/* Left Column */}
-      <div className="hidden lg:flex flex-col bg-[#090D28] text-white p-4 lg:w-full xl:w-full 2xl:w-full">
-        <h1 className="text-2xl mb-4 text-orange-500">Vizlah</h1>
-        <div className="flex-grow flex items-center justify-center">
-          <img src={circle} alt="Brand Logo" className="max-w-full h-auto lg:max-w-md" />
+    <div className="min-h-screen flex">
+      <div
+        className="hidden md:block w-full md:w-3/5 bg-cover bg-center relative flex items-center justify-center"
+        style={{
+          backgroundImage: `linear-gradient(180deg, #5055f5, rgba(46, 53, 71, 0.35)), url(${backimg})`
+        }}
+      >
+        <div className="relative text-white p-8 w-180 mt-25 ml-15">
+          <h1 className="inline max-w-none mb-20 text-white text-8xl font-bold">Hello RepoTrack!</h1>
+          <p className="text-xl mt-5 mb-8">Skip repetitive and manual sales-marketing tasks. Get highly productive
+            through automation and save tons of time!
+          </p>
+          <p className="text-gray-300 mt-30" style={{ opacity: 0.7 }}>© 2024 RepoTrack. All rights reserved.</p>
         </div>
       </div>
-      
-      {/* Right Column */}
-      <div className="flex flex-col items-center justify-center bg-[#181C3A] text-white p-4 md:p-8 shadow-lg relative lg:w-full xl:w-full 2xl:w-full">
-        <div className="w-full max-w-xs sm:max-w-sm md:max-w-md">
-          <h2 className="text-3xl mb-4 md:mb-6 text-left">Login To Your Account</h2>
-          <h6 className="text-sm mb-4 md:mb-6 text-left">Enter your credentials to access your account.</h6>
-          <form>
-            <div className="mb-4">
-              <label className="block text-gray-400 text-sm font-bold mb-2" htmlFor="username">
-                Email
-              </label>
-              <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-transparent"
-                id="username"
-                type="text"
-                placeholder="example@gmail.com"
-              />
+      <div className="w-full md:w-2/5 bg-white flex items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div className="w-full max-w-md">
+          <h2 className="text-3xl text-center text-black font-bold mb-6">Welcome Back!</h2>
+          <p className="text-xl text-center text-black mb-6">Don’t have an account? <Link to ="/signup" className="text-blue-600 hover:text-blue-700">Create a new account now</Link>, it's FREE! Takes less than a minute.</p>
+          <form className="space-y-1">
+            <div>
+              <div className="mt-1">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autoComplete="email"
+                  placeholder='Email address'
+                  required
+                  className="appearance-none block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                />
+              </div>
             </div>
-            <div className="mb-4">
-              <label className="block text-gray-400 text-sm font-bold mb-2" htmlFor="password">
-                Password
-              </label>
-              <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-transparent"
-                id="password"
-                type="password"
-                placeholder="******************"
-              />
-              <Link to={'/forget_password'} ><p className="text-gray-400 cursor-pointer text-sm mt-2 text-right">Forgot Password?</p></Link>
+
+            <div>
+              <div className="mt-4">
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder='Password'
+                  autoComplete="current-password"
+                  required
+                  className="appearance-none block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                />
+              </div>
             </div>
-            <div className="flex items-center justify-between mt-6 md:mt-12">
-              <Link to={'/dashboard'}>
-              <button type="submit" className="cursor-pointer">
-                <img src={loginbtn} alt="Login Button" />
+
+            <div>
+            <Link to="/dashboard">
+              <button
+                type="submit"
+                className="w-full flex justify-center mt-7 py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-transform duration-300 transform hover:-translate-y-2"
+              >
+                Sign In
               </button>
               </Link>
             </div>
           </form>
+          <p className="mt-3 text-center">
+            Forgot password? <Link to="/forget_password" className="text-blue-600 hover:text-blue-700">Click here</Link>
+          </p>
         </div>
-        <Link to={'/signup'} className="mt-4 text-center cursor-pointer text-green-500 lg:absolute lg:top-0 lg:right-0 lg:mt-4 lg:mr-4 lg:text-right">Don’t have an account? Sign Up</Link>
       </div>
     </div>
   );
-}
+};
 
 export default SignIn;

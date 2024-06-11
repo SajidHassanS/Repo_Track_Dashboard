@@ -8,13 +8,13 @@ const ChartOne = () => {
     '#a62811', 
     '#d43316', 
     '#ea5136', 
-    '#ee6f59', 
+    '#00FF0A', 
     '#f29787', 
-    '#f7bfb5', 
-    '#fce7e3', 
+    '#0c7699', 
+    '#f8991d', 
     '#00d394', 
     '#6bffd3', 
-    '#d1fff1', 
+    '#c9c822', 
   ];
 
   const options = {
@@ -92,10 +92,6 @@ const ChartOne = () => {
             <div className="border-2 w-2/3 lg:-rotate-[15deg] h-3 xl:h-6 mr-10 lg:mr-20 border-l-0 border-t-0"></div>
           </div>
         </div>
-      </div>
-      <div className="absolute bottom-5 right-5 flex space-x-4 mt-10">
-        <button className="dark:bg-[#090d28] bg-bodydark1 text-gray-600 px-4 py-2 rounded">Pie Chart</button>
-        <button className="dark:bg-[#091d28] bg-bodydark1 text-gray-600 px-4 py-2 rounded">Table</button>
       </div>
     </div>
   );

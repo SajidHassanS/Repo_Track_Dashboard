@@ -85,7 +85,7 @@ const CardDataStats: React.FC<CardDataStatsProps> = ({
     <div className="rounded-2xl col-span-6 md:col-span-2 2xl:col-span-1 h-64 py-4 px-4 shadow-default bg-bodydark1 dark:bg-[#090d28] overflow-hidden m-4 flex flex-col justify-between">
       <div className="flex items-end justify-between">
         <div>
-          <h4 className="text-title-sm font-light text-black dark:text-bodydark">{title1}</h4>
+          <h4 className="font-semibold font-light text-black dark:text-bodydark">{title1}</h4>
         </div>
         <span className={`flex items-center gap-1 text-sm font-medium ${levelUp ? 'text-meta-3' : ''} ${levelDown ? 'text-meta-5' : ''}`}>
           {rate1}

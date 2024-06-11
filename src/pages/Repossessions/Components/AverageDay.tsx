@@ -4,17 +4,16 @@ import ReactApexChart from 'react-apexcharts';
 const ChartFive: React.FC = () => {
   const [chartOptions, setChartOptions] = React.useState({
     series: [{
+      name: "Recovery Time",
       data: [11, 17, 15, 15, 21, 14, 21, 14, 4, 2, 13, 2, 12, 11, 10]
-    },{
-        data: [24, 32, 7, 31, 15, 29, 26,12,28,27,19,15,17,32,21,23]
-      }],
+    }],
     options: {
       chart: {
         height: 350,
         toolbar: {
           show: false,
         },
-        type: 'line', // Changed from 'line' to 'line'
+        type: 'area', // Changed from 'line' to 'area'
         zoom: {
           enabled: false
         }
@@ -24,10 +23,9 @@ const ChartFive: React.FC = () => {
       },
       stroke: {
         curve: 'straight',
-        width: 2
+        width: 3
       },
       grid: {
-        show:false,
         borderColor: 'gray', // Set grid color to white
         strokeDashArray: 5 // Set dashed lines
       },
@@ -75,9 +73,6 @@ const ChartFive: React.FC = () => {
           }
         }
       },
-      legend: {
-        show: false // Hide legend
-      },
       responsive: [
         {
           breakpoint: 1200,
@@ -112,17 +107,17 @@ const ChartFive: React.FC = () => {
           },
         },
       ],
-      colors: ['#00d394','#e74e37']
+      colors: ['#ff5252']
     }
+    
   });
 
   return (
     <div className="dark:bg-[#090d28] bg-bodydark1 p-5 rounded-2xl shadow-lg">
-       <div className="flex w-full justify-between items-center text-black dark:text-white">
-        <h3 className="font-bold text-title-lg">Assignment Volume</h3>
-        <h4 className="time-period-btn">last 30 Days</h4>
+      <div className="flex w-full justify-between items-center text-black dark:text-white">
+        <h3 className="font-bold text-title-lg">Average Day To Day Repo</h3>
       </div>
-      <ReactApexChart options={chartOptions.options} series={chartOptions.series} type="line" height={550} />
+      <ReactApexChart options={chartOptions.options} series={chartOptions.series} type="area" height={550} />
     </div>
   );
 };

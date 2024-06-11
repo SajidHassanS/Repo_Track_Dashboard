@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactApexChart from 'react-apexcharts';
 
-const ChartSeven = () => {
+const ChartSix = () => {
   const options = {
     series: [
       { data: [11, 17, 15, 15, 21, 14, 21, 14, 4, 2, 13, 2, 12, 11, 10] },
-      { data: [1, 7, 5, 11, 15, 4, 12, 14, 4, 2, 3, 2, 2, 1, 19] }
     ],
     options: {
       chart: {
@@ -94,22 +93,25 @@ const ChartSeven = () => {
         },
         tickAmount: 20 // Show only 20 labels
       },
-      dataLabels: {
-        enabled: false
-      },
       yaxis: {
+        show:false,
         tickAmount: 7, // Set gap of 5 between labels
         min: 0,
         max: 35
       },
-      colors: ['#00d394', '#ea5136'], // Set colors for the bars
+      
+      colors: ['#ea5136'], // Set colors for the bars
       legend: {
         show: false // Hide legend
       },
       fill: {
         opacity: 1
       },
+      dataLabels: {
+        enabled: false
+      },
       grid: {
+        show:false,
         borderColor: '#40475d', // Set grid color to white
         strokeDashArray: 5 // Set dashed lines
       },
@@ -124,9 +126,11 @@ const ChartSeven = () => {
 
   return (
     <div className="dark:bg-[#090d28] bg-bodydark1 p-5 col-span-2 rounded-2xl shadow-lg">
-      <div className="flex w-full justify-between items-center text-black dark:text-white">
-        <h3 className="font-bold text-title-lg">Total Repossessions</h3>
-        <h4 className="time-period-btn">Last 30 days</h4>
+      <div className="dark:bg-[#090d28] bg-bodydark1 p-5 rounded-2xl">
+       <div className="flex w-full justify-between items-center text-black dark:text-white">
+        <h3 className="font-bold text-title-lg">Recovery Rate</h3>
+        <h4 className="time-period-btn">last 30 Days</h4>
+      </div>
       </div>
       <ReactApexChart
         options={options.options}
@@ -138,4 +142,4 @@ const ChartSeven = () => {
   );
 };
 
-export default ChartSeven;
+export default ChartSix;
