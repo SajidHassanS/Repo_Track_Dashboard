@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import DefaultLayout from '../../layout/DefaultLayout';
 import ChartOne from './components/ChartOne';
-import Table from '../Reports/components/Table';
+import Table from './components/Table';
 import ListChartFourColors from '../Repossessions/Components/ListChartFourColors';
 
 const Branches = () => {

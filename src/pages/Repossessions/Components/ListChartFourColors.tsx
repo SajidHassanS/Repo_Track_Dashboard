@@ -16,12 +16,12 @@ const ListChartFourColors = () => {
     return (
       <div className="py-4 flex flex-row flex-wrap w-full 2xl:flex-col justify-center items-start gap-2 ml-8">
         <div className="flex justify-between items-center text-black dark:text-white">
-          <h3 className="font-bold text-title-lg ml-40">Branches</h3> {/* Adjusted title */}
+          <h3 className="font-bold text-title-lg ml-40 xl:ml-0">Branches</h3> {/* Adjusted title */}
         </div>
         {branchData.map((item, idx) => (
           <div
             key={idx}
-            className={`rounded-xl text-center ${item.color} ml-40 px-8 md:px-1 py-3 text-white flex items-center justify-center`}
+            className={`rounded-xl text-center ${item.color} ml-40 xl:ml-0 px-8 md:px-1 py-3 text-white flex items-center justify-center`}
             style={{ minWidth: "250px", minHeight: "50px" }} // Set minimum dimensions
           >
             {item.name}
